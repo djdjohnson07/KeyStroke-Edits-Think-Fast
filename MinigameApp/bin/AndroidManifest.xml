@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.minigameapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    
+    <application
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:name="com.facebook.LoginActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity
+            android:name=".TempMain"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".NewLogin"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TestFBFetch"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShuffleboardActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SpaceActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BoxingActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginMain"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name=".MainPage"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Bluetooth"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RaceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FootballActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChopWoodActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name=".JumpingJackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RGLightActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ManageAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

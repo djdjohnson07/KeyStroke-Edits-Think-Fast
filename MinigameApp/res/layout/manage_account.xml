@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fb_account" 
+    android:id="@+id/main_ui_container"    >
+
+     <TextView
+         android:id="@+id/score"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/name"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="43dp"
+         android:text="Score: "
+         android:textSize="23dp" />
+
+     <com.facebook.widget.LoginButton
+         android:id="@+id/login_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/profilePicture"
+         android:layout_marginTop="18dp"
+         android:layout_toLeftOf="@+id/score" />
+
+     <com.facebook.widget.ProfilePictureView
+         android:id="@+id/profilePicture"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/postStatusUpdateButton"
+         android:layout_toRightOf="@+id/score"
+         android:gravity="center_horizontal" >
+
+     </com.facebook.widget.ProfilePictureView>
+
+     <Button
+         android:id="@+id/postStatusUpdateButton"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_toLeftOf="@+id/score"
+         android:text="Post Status Update" />
+
+     <TextView
+         android:id="@+id/name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/login_button"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="49dp"
+         android:text="Greetings "
+         android:textSize="23dp" />
+
+     <Button
+         android:id="@+id/pickFriendsButton"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@+id/score"
+         android:text="Pick Some Friends" />
+
+</RelativeLayout>
